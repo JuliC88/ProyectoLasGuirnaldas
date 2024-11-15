@@ -239,8 +239,13 @@ h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     width: 150px;
-    text-align: center;
-    margin: 10px auto;
+    text-align:center;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+.producto:hover{
+    transform: scale(1.1);
+    box-shadow:0 0 2px 2px #cac5bf ;
 }
 
 .producto img {
@@ -251,7 +256,7 @@ h3 {
 }
 
 .producto img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow:0 0 2px 2px #cac5bf ;
 }
 
@@ -260,8 +265,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    justify-content: center;
-    margin-top: auto;
+    justify-content:center;
     background-color: #d1c9c0;
     border: 1px solid #ddd;
     border-radius: 8px;
