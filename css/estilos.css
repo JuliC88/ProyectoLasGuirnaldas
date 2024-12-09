@@ -86,11 +86,7 @@ header {
     font-weight: bold;
 }
 
-/* Carrito a la derecha */
-.carrito {
-    margin-left: 30px ;
-}
-
+/* Carrito */
 .carrito a .fa-cart-shopping {
     font-size: 20px;
     color: #ffffff;
@@ -109,12 +105,11 @@ header nav a:hover {
 }
 
 /* Menú desplegable y submenu */
-.desplegableContenido,
-.submenu {
+.desplegableContenido {
     display: none;
     position: absolute;
     background-color: rgb(184, 182, 178);
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     z-index: 1000;
 }
@@ -134,17 +129,17 @@ header nav a:hover {
 
 .desplegableContenido a:hover {
     background-color: #7e7d7b;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 /* Estilos específicos para el submenu */
 .submenu {
     display: none;
+    border-radius: 5px;
     background-color: #777572;
     padding: 4px;
-    border-radius: 15px;
     margin-left: 131px;
-    top: 0;
+    top: 4px;
     position: absolute;
     min-width: 140px;
 }
@@ -164,7 +159,7 @@ header nav a:hover {
 
 .submenu a:hover {
     background-color: #5c5b5a;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 /* Estilos del contenido principal */
@@ -381,20 +376,25 @@ footer div a:hover {
     .nav {
         flex-direction: column;
         text-align: center;
+        height: auto;
+    }
+
+    .navCentro img {
+        display: none;
+        visibility: hidden;
     }
 
     .navIzq ul, .navDer ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        flex-direction:column;
+        align-items:center;
+        row-gap: 4px;
     }
 
-    .navCentro, .carrito {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    .submenu {
+        display: none;
+        visibility: hidden;
     }
-    
+
     body footer{
         text-align: center;
         padding: 10px;
