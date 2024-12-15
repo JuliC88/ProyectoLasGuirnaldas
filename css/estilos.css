@@ -276,10 +276,23 @@ table {
     text-align: center;
 }
 
-/* Estilo del formulario */
-form {
+/* Pagina Contacto */
+.contacto{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.contenedor1, .contenedor2 {
+    margin: 30px;
+    text-align: center;
+    width: 100%;
+    justify-items: center;
+}
+/* Estilo del formulario */
+
+form {
+    display:flex;
+    flex-direction:column;
     max-width: 400px;
     margin: 20px auto;
     background-color: #d1c9bf;
@@ -322,16 +335,11 @@ form input[type="submit"]:hover, form input[type="reset"]:hover {
     color: #d1ffec;
 }
 
-.contacto{
-    display: flex;
-    flex-direction: row;
-}
-
-.contenedor1, .contenedor2 {
-    margin: 30px;
-    text-align: center;
-    width: 100%;
-    justify-items: center;
+#mensajeError{
+    color: red; 
+    font-size: 14px; 
+    font-weight: bold; 
+    margin-bottom: 20px;
 }
 
 /* Footer */

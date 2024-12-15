@@ -68,20 +68,21 @@
                     <p>Escribinos en nuestro formulario de contacto, comunicate a nuestro Wapp: 11 58220927, ó envianos un correo electrónico a Paseolasguirnaldas.adm@gmail.com, y te remitiremos toda la información que necesitás para formar parte de nuestra querida comunidad emprendedora.</p>
                 </div>
             </section>
-            <section>
-                <form action=""> <!-- En algun momento ubicar direccion mail correcta -->
+            <section class="form">
+                <form action="" id="formContacto" novalidate> 
                     <div>
-                        <input type="text" placeholder="Ingresá tu nombre y apellido" minlength="3" maxlength="15" required name="nombre" id="nombre">
+                        <input type="text" placeholder="Ingresá tu nombre completo" minlength="3" maxlength="20"  name="nombre" id="nombre">
                     </div>
                     <div>
-                        <input type="email" placeholder="Ingresá tu email" required name="email" id="email">
+                        <input type="email" placeholder="Ingresá tu email" name="email" id="email">
                     </div>
                     <div>
-                        <input type="tel" placeholder="Ingresá tu teléfono" name="telefono" id="telefono">
+                        <input type="tel" placeholder="Ingresá tu teléfono" pattern="[0-9]+" name="telefono" id="telefono">
                     </div>
                     <div>
-                        <input type="text" placeholder="Dejanos tu consulta" maxlength="60" name="consulta" id="consulta">
+                        <textarea id="mensaje" name="mensaje" rows="8" ></textarea> 
                     </div>
+                    <div id="mensajeError"></div>
                     <div>
                         <input type="reset" value="Limpiar Formulario">
                         <input type="submit" value="Enviar">
@@ -110,5 +111,6 @@
                 </a>
             </div>
         </footer>
+    <script src="../js/validacion.js"></script>
     </body>
 </html>
